@@ -4,77 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prof. Janielly Oliveira | Biologia</title>
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
     <script>
       tailwind.config = {
         theme: {
           extend: {
-            fontFamily: {
-              sans: ['Poppins', 'sans-serif'],
-            },
+            fontFamily: { sans: ['Poppins', 'sans-serif'] },
             colors: {
               bio: {
-                50: '#f0fdf4',
-                100: '#dcfce7',
-                200: '#bbf7d0',
-                300: '#86efac',
-                400: '#4ade80',
-                500: '#22c55e',
-                600: '#16a34a',
-                700: '#15803d',
-                800: '#166534',
-                900: '#14532d',
+                50: '#f0fdf4', 100: '#dcfce7', 200: '#bbf7d0', 300: '#86efac',
+                400: '#4ade80', 500: '#22c55e', 600: '#16a34a', 700: '#15803d',
+                800: '#166534', 900: '#14532d',
               },
-              secondary: {
-                50: '#f0f9ff',
-                500: '#0ea5e9',
-                900: '#0c4a6e',
-              }
-            },
-            animation: {
-              'float': 'float 6s ease-in-out infinite',
-              'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-            },
-            keyframes: {
-              float: {
-                '0%, 100%': { transform: 'translateY(0)' },
-                '50%': { transform: 'translateY(-20px)' },
-              }
+              secondary: { 50: '#f0f9ff', 500: '#0ea5e9', 900: '#0c4a6e' }
             }
           }
         }
       }
     </script>
     <style>
-      body {
-        scroll-behavior: smooth;
-      }
-      .glass-card {
-        background: rgba(255, 255, 255, 0.7);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.3);
-      }
-      .organic-blob {
-        border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+      body { scroll-behavior: smooth; }
+      .glass-card { 
+        background: rgba(255, 255, 255, 0.7); 
+        backdrop-filter: blur(10px); 
+        border: 1px solid rgba(255, 255, 255, 0.3); 
       }
     </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react": "https://esm.sh/react@^19.2.4",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
-    "react/": "https://esm.sh/react@^19.2.4/",
-    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
-    "@google/genai": "https://esm.sh/@google/genai@^1.40.0"
-  }
-}
-</script>
-<link rel="stylesheet" href="/index.css">
-</head>
-  <body class="bg-slate-50 text-slate-800 antialiased selection:bg-bio-200 selection:text-bio-900">
+  </head>
+  <body class="bg-slate-50 text-slate-800 antialiased">
     <div id="root"></div>
-  <script type="module" src="/index.tsx"></script>
-</body>
+    
+    <script type="module" src="./index.tsx"></script>
+  </body>
 </html>
